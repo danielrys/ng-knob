@@ -133,7 +133,7 @@
         fontSize = this.options.fontSize + "px";
       }
       if(this.options.step < 1) {
-        this.value = this.value.toFixed(1);
+        this.value = parseFloat(this.value).toFixed(1);
       }
       var v = this.value; 
       if (typeof this.options.inputFormatter === "function"){
